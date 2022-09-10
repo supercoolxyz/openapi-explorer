@@ -95,6 +95,7 @@ export default async function ProcessSpec(specUrlOrObject, serverUrl = '') {
   } else {
     jsonParsedSpec.servers = [{ url: 'http://localhost', computedUrl: 'http://localhost' }];
   }
+
   servers = jsonParsedSpec.servers;
   const parsedSpec = {
     info: jsonParsedSpec.info,
@@ -296,6 +297,7 @@ function groupByTags(openApiSpec) {
             callbacks: pathOrHookObj.callbacks,
             deprecated: pathOrHookObj.deprecated,
             security: pathOrHookObj.security || openApiSpec.security,
+            externalDocs: pathOrHookObj.externalDocs,
             // commonSummary: commonPathProp.summary,
             // commonDescription: commonPathProp.description,
             xCodeSamples: pathOrHookObj['x-codeSamples'] || pathOrHookObj['x-code-samples'] || '',

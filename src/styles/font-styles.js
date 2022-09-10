@@ -62,6 +62,7 @@ export default css`
 
   h1,h2,h3,h4,h5,h5{
     margin-block-end: 0.2em;
+    margin-block-start: 0.5em;
   }
   h3 {
     margin-top: 0;
@@ -87,6 +88,7 @@ export default css`
   }
 
   .m-markdown p,
+  .m-markdown a,
   .m-markdown span,
   .m-markdown li {
     font-size: var(--font-size-regular);
@@ -94,6 +96,7 @@ export default css`
   }
   
   .m-markdown-small p,
+  .m-markdown-small a,
   .m-markdown-small span,
   .m-markdown-small li {
     font-size: var(--font-size-small);
@@ -113,6 +116,8 @@ export default css`
 
   .m-markdown p, .m-markdown-small p {
     margin-block-end: 0;
+    overflow-wrap: anywhere;
+
   }
 
   .toolbar .m-markdown p, .toolbar .m-markdown-small p {
@@ -186,9 +191,8 @@ export default css`
     padding-inline-start: 20px;
   }
 
-  .m-markdown-small a,
-  .m-markdown a {
-    color:var(--blue);
+  .m-markdown a, .m-markdown-small a {
+    color:var(--blue); 
   }
 
   .m-markdown-small img,
