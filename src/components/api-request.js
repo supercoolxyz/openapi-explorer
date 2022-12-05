@@ -117,13 +117,13 @@ export default class ApiRequest extends LitElement {
     }
     let title = '';
     if (paramType === 'path') {
-      title = 'PATH PARAMETERS';
+      title = getI18nText('operations.path-parameters');
     } else if (paramType === 'query') {
-      title = 'QUERY-STRING PARAMETERS';
+      title = getI18nText('operations.pquery-string-parameters');
     } else if (paramType === 'header') {
-      title = 'REQUEST HEADERS';
+      title = getI18nText('operations.prequest-headers');
     } else if (paramType === 'cookie') {
-      title = 'COOKIES';
+      title = getI18nText('operations.pcookies');
     }
 
     const tableRows = [];

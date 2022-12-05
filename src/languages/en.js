@@ -36,6 +36,10 @@ export default {
     'operations': {
       'request': 'REQUEST',
       'request-body': 'REQUEST BODY',
+      'path-parameters': 'PATH PARAMETERS',
+      'pquery-string-parameters': 'PQUERY-STRING PARAMETERS',
+      'prequest-headers': 'PREQUEST HEADERS',
+      'pcookies': 'PCOOKIES',
       'model': 'MODEL',
       'body': 'BODY',
       'request-headers': 'REQUEST HEADERS',

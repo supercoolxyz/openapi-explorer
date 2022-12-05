@@ -36,6 +36,10 @@ export default {
     'operations': {
       'request': 'REQUÊTE',
       'request-body': 'CORPS DE LA REQUÊTE',
+      'path-parameters': 'PATH PARAMÈTRES',
+      'pquery-string-parameters': 'PQUERY-STRING PARAMÈTRES',
+      'prequest-headers': 'EN-TÊTES DE PRÉ-DEMAND',
+      'pcookies': 'PCOOKIES',
       'model': 'MODÈLE',
       'body': 'CORPS',
       'request-headers': 'EN-TÊTES DE LA REQUÊTE',
